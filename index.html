@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Get Stuff Done</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header">
+            <h1 class="title">get stuff done.</h1>
+            <h3><span class="colored-words">get stuff done</span> is a web application that keeps track of tasks through organized lists</h3>
+        </div>        
+    </header>   
+
+    <span class="date">Date: </span>
+
+    <div class="all-tasks-lists">
+        <h2 class="all-tasks-lists-title">my lists</h2>
+        <ul class="tasks-list">
+            <li class="list-name active-list">school</li>  <!--title of active list will be bolded-->
+            <li class="list-name">extracurriculars</li>
+            <li class="list-name">projects</li>
+        </ul>
+
+        <form action="">
+            <input type="text" class="new-list" placeholder="add new list" aria-label="new list name"/>
+            <button class="btn-create" aria-label="create new list">+</button>
+        </form>
+    </div>
+
+    <div class="todo-list-form">
+        <div class="todo-list-header">
+            <h2 class="todo-list-title">school</h2>
+            <p class="task-count">3 tasks remaining</p>
+        </div>
+
+        <div class="todo-body">
+            <div class="current-tasks">
+                <!--/task 1-->
+                <div class="task">
+                    <input type="checkbox" id="task1" name="task1">
+                    <label for="task1">
+                        <span class="custom-checkbox"></span>Task 1
+                    </label><br>
+                </div>
+                <!--/task 2-->
+                <div class="task">
+                    <input type="checkbox" id="task2" name="task2">
+                    <label for="task2">
+                        <span class="custom-checkbox"></span>Task 2
+                    </label><br>
+                </div>
+                <!--/task 3-->
+                <div class="task">
+                    <input type="checkbox" id="task3" name="task3">
+                    <label for="task3">
+                        <span class="custom-checkbox"></span>Task 3
+                    </label><br>
+                </div>
+            </div>
+
+            <div class="new-task-creator">
+                <form action="">
+                    <input type="text" class="new-task" placeholder="add new task" aria-label="add new test"/>
+                    <button class="btn-create" aria-label="create new task">+</button>
+                </form>
+            </div>
+
+            <div class="delete-task">
+                <button class="btn delete">clear completed tasks</button>
+                <button class="btn delete" data-delete-list-button>delete list</button> <!--TO DO: add confirmation box-->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
